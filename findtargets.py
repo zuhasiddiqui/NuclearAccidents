@@ -31,8 +31,8 @@ for month in range(1, 13):
         outfile = open(outfilename, "w", encoding='utf-8')
         newpage = infile.read().decode('utf-8')
     except:
-            newpage = ""
-            print("We have an error")
+        newpage = ""
+        print("We have an error")
     if newpage.find(targetstr) >- 1:
         print(datestring, file=outfile)
 
